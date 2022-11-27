@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# **pleasurable-activities** (--url--)
 
-## Getting Started
+An app to help you pick a pleasurable activity to do!
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
+- [API Reference](#api-reference)
+- [Running Tests](#running-tests)
+- [Tech Stack](#tech-stack)
+- [Feedback](#feedback)
+- [Author](#author)
+
+<hr/>
+
+## **API Reference**
+
+API Route Reference can be [found here](docs/server/api-webhooks-reference.md)
+
+<hr/>
+
+## **Running Tests**
+
+### To run tests navigate to the root directory and run these commands to...
+
+Run individual test suites in the Cypress GUI:
+
+```zsh
+npm run test:open
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run all tests in Headless mode:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```zsh
+npm run test
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<hr/>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## **Tech Stack**
 
-## Learn More
+### **Client:**
 
-To learn more about Next.js, take a look at the following resources:
+TypeScript, React, Next.js 13, TailwindCSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **Server:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Next.js 13, Mongoose
 
-## Deploy on Vercel
+### **Database:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MongoDB
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<!-- ### **Authentication/Authorization:**
+
+auth0 -->
+
+<!-- ### **Testing:**
+
+Cypress, start-server-and-test, Mocha, Chai -->
+
+<hr/>
+
+## **Support**
+
+For support, please reach out to me on [twitter](https://twitter.com/booshja), via [email](mailto:admin@jacobandes.dev), or on [linkedin](https://linkedin.com/in/jacobandes).
+
+<hr/>
+
+## **Authors**
+
+- [Jacob Andes - @booshja](https://www.github.com/booshja)
+
+## Feedback
+
+For feedback, email [admin@jacobandes.dev](mailto:admin@jacobandes.dev) or submit the contact form on the website.
+
+## Author
+
+- [@booshja](https://www.github.com/booshja)
