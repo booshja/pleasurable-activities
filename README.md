@@ -18,7 +18,7 @@ API Route Reference can be [found here](docs/server/api-webhooks-reference.md)
 
 <hr/>
 
-## **Running Tests**
+<!-- ## **Running Tests**
 
 ### To run tests navigate to the root directory and run these commands to...
 
@@ -34,7 +34,7 @@ Run all tests in Headless mode:
 npm run test
 ```
 
-<hr/>
+<hr/> -->
 
 ## **Tech Stack**
 
