@@ -1,0 +1,8 @@
+**/build/*
+**/dependencies/*
+package.json
+package-lock.json
+**/.vscode/*
+**/node_modules/*
+**/.next/*
+.eslintrc.json
