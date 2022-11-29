@@ -1,7 +1,6 @@
 require("server-only");
 
 // components
-// import Image from "next/image";
 import NavbarLoggedOut from "@shared/components/NavbarLoggedOut";
 
 export default function Landing(): JSX.Element {
