@@ -1,4 +1,4 @@
-import type { OnboardingPages } from "./page";
+import type { OnboardingPages } from "@shared/types/enums";
 
 interface ProgressDisplayProps {
   currentPage: OnboardingPages;

@@ -1,7 +1,7 @@
 require("server-only");
 
 // components
-import Navbar from "../../shared/components/Navbar";
+import Navbar from "@shared/components/Navbar";
 
 export default function RootLayout({
   children,

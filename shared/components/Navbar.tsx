@@ -2,18 +2,18 @@
 
 // dependencies
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 // components
 import Link from "next/link";
 
 const Navbar = (): JSX.Element => {
-  const router = useRouter();
+  const pathname = usePathname();
 
   const [open, setOpen] = useState<boolean>(false);
 
   useEffect(() => {
     setOpen(false);
-  }, [router.pathname]);
+  }, [pathname]);
 
   const handleMenuOpen = (): void => {
     setOpen(true);

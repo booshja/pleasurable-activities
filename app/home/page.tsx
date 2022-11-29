@@ -17,8 +17,8 @@ const UserHome = ({}: UserHomeProps): JSX.Element => {
       <div className="">
         <h1 className="">Choose an Activity</h1>
         <h3 className="">Use the Selector:</h3>
-        <Link href="/selector/list">Get a list -&gt;</Link>
         <Link href="/selector/single">Get an activity -&gt;</Link>
+        <Link href="/selector/list">Get a list -&gt;</Link>
         <Link href="/selector/random">Get a random activity -&gt;</Link>
         <Link href="/home/lists">Peruse your Lists -&gt;</Link>
       </div>

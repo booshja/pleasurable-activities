@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 // types/enums
 import type { SubmitHandler } from "react-hook-form";
 import type { Dispatch, SetStateAction } from "react";
-import type { UserData } from "./page";
+import type { UserData } from "@shared/types/types";
 
 type FormValues = {
   userName: string;

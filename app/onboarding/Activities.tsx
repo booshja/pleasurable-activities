@@ -3,12 +3,12 @@
 // dependencies
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+// utilities
+import { activityLengths } from "@utilities/constants";
 // types/enums
 import type { SubmitHandler } from "react-hook-form";
 import type { Dispatch, SetStateAction, FormEvent } from "react";
-import type { ActivitiesData, CategoriesData } from "./page";
-// utilities
-import { activityLengths } from "@utilities/constants";
+import type { ActivitiesData, CategoriesData } from "@shared/types/types";
 
 type FormValues = {
   activityInput: string;
@@ -16,7 +16,6 @@ type FormValues = {
 };
 
 interface ActivitiesProps {
-  nextPage: () => void;
   categoriesData: CategoriesData;
   activitiesData: ActivitiesData;
   setActivitiesData: Dispatch<SetStateAction<ActivitiesData>>;
@@ -31,7 +30,6 @@ const stepStrings: { [keyof: number]: string } = {
 };
 
 const Activities = ({
-  nextPage,
   categoriesData,
   activitiesData,
   setActivitiesData,

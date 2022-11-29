@@ -8,44 +8,13 @@ import Categories from "./Categories";
 import Message from "./Message";
 import Name from "./Name";
 import ProgressDisplay from "./ProgressDisplay";
-
-export enum OnboardingPages {
-  GREETING = 0,
-  NAME = 1,
-  CATEGORIES = 2,
-  ACTIVITIES = 3,
-  FINISH = 4,
-}
-
-export type UserData = {
-  name: string;
-};
-
-export type ActivitiesData = {
-  first: {
-    activity: string;
-    time: string;
-  };
-  second: {
-    activity: string;
-    time: string;
-  };
-  third: {
-    activity: string;
-    time: string;
-  };
-  fourth: {
-    activity: string;
-    time: string;
-  };
-};
-
-export type CategoriesData = {
-  first: string;
-  second: string;
-  third: string;
-  fourth: string;
-};
+// types/enums
+import type {
+  UserData,
+  ActivitiesData,
+  CategoriesData,
+} from "@shared/types/types";
+import { OnboardingPages } from "@shared/types/enums";
 
 const Onboarding = (): JSX.Element => {
   const [page, setPage] = useState<OnboardingPages>(OnboardingPages.GREETING);
@@ -111,7 +80,6 @@ const Onboarding = (): JSX.Element => {
       )}
       {page === OnboardingPages.ACTIVITIES && (
         <Activities
-          nextPage={nextPage}
           categoriesData={categoriesData}
           activitiesData={activitiesData}
           setActivitiesData={setActivitiesData}
