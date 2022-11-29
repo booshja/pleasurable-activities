@@ -20,49 +20,59 @@ const Navbar = (): JSX.Element => {
   };
 
   return (
-    <header data-test="header-container">
-      <Link href="/" data-test="logo-link">
+    <header className="" data-test="header-container">
+      <Link href="/" className="" data-test="logo-link">
         Pleasurable Activities
       </Link>
-      <nav role="navigation" data-test="desktop-nav">
-        <Link href="/" data-test="home-nav-link">
+      <nav className="" role="navigation" data-test="desktop-nav">
+        <Link href="/" className="" data-test="home-nav-link">
           Home
         </Link>
-        <Link href="/selectors" data-test="selectors-nav-link">
+        <Link href="/selectors" className="" data-test="selectors-nav-link">
           Selectors
         </Link>
-        <Link href="/account" data-test="account-nav-link">
+        <Link href="/account" className="" data-test="account-nav-link">
           Account
         </Link>
       </nav>
       <button
         type="button"
         onClick={handleMenuOpen}
+        className=""
         data-test="mobile-menu-button"
         aria-expanded={open ? "true" : "false"}
         aria-controls="mobile-menu"
       >
         🍔
       </button>
-      <div id="mobile-menu" data-test="mobile-menu">
+      <div id="mobile-menu" className="" data-test="mobile-menu">
         <button
           type="button"
           onClick={() => setOpen(false)}
+          className=""
           data-test="closing-x"
         >
           X
         </button>
-        <Link href="/" data-test="mobile-logo-link">
+        <Link href="/" className="" data-test="mobile-logo-link">
           Pleasurable Activities
         </Link>
-        <nav role="navigation" data-test="mobile-nav">
-          <Link href="/" data-test="home-mobile-nav-link">
+        <nav className="" role="navigation" data-test="mobile-nav">
+          <Link href="/" className="" data-test="home-mobile-nav-link">
             Home
           </Link>
-          <Link href="/selectors" data-test="selectors-mobile-nav-link">
+          <Link
+            href="/selectors"
+            className=""
+            data-test="selectors-mobile-nav-link"
+          >
             Selectors
           </Link>
-          <Link href="/account" data-test="account-mobile-nav-link">
+          <Link
+            href="/account"
+            className=""
+            data-test="account-mobile-nav-link"
+          >
             Account
           </Link>
         </nav>
