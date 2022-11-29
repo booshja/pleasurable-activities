@@ -1,7 +1,7 @@
 require("server-only");
 
 // components
-import Navbar from "./Navbar";
+import NavbarLoggedOut from "@shared/components/NavbarLoggedOut";
 
 export default function RootLayout({
   children,
@@ -10,7 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <Navbar />
+      <NavbarLoggedOut />
       {children}
     </>
   );
