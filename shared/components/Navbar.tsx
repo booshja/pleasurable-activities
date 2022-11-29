@@ -20,11 +20,18 @@ const Navbar = (): JSX.Element => {
   };
 
   return (
-    <header className="" data-test="header-container">
-      <Link href="/" className="" data-test="logo-link">
-        Pleasurable Activities
+    <header
+      className="container flex items-center justify-between h-16 max-w-full px-5 border-b-2 lg:px-8"
+      data-test="header-container"
+    >
+      <Link href="/" className="font-bold text-xl" data-test="logo-link">
+        Happy Brain
       </Link>
-      <nav className="" role="navigation" data-test="desktop-nav">
+      <nav
+        className="hidden items-center justify-between md:flex md:gap-4"
+        role="navigation"
+        data-test="desktop-nav"
+      >
         <Link href="/" className="" data-test="home-nav-link">
           Home
         </Link>
@@ -34,43 +41,59 @@ const Navbar = (): JSX.Element => {
         <Link href="/account" className="" data-test="account-nav-link">
           Account
         </Link>
+        <p className="">Log Out</p>
       </nav>
       <button
+        data-collapse-toggle="mobile-menu"
         type="button"
-        onClick={handleMenuOpen}
-        className=""
-        data-test="mobile-menu-button"
-        aria-expanded={open ? "true" : "false"}
+        className="inline-flex items-center p2 ml-3 text-2xl md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
         aria-controls="mobile-menu"
+        aria-expanded={open ? "true" : "false"}
+        onClick={() => setOpen((curr) => !curr)}
+        data-test="mobile-menu-button"
       >
         🍔
       </button>
-      <div id="mobile-menu" className="" data-test="mobile-menu">
+      <div
+        className={`${
+          open ? "absolute" : "hidden"
+        } flex flex-col items-center top-0 left-0 w-full h-screen p-5 bg-slate-300`}
+        id="mobile-menu"
+        data-test="mobile-menu"
+      >
         <button
           type="button"
           onClick={() => setOpen(false)}
-          className=""
+          className="text-3xl self-end hover:cursor-pointer"
           data-test="closing-x"
         >
           X
         </button>
-        <Link href="/" className="" data-test="mobile-logo-link">
-          Pleasurable Activities
+        <Link
+          href="/"
+          className="font-bold text-3xl my-3"
+          data-test="mobile-logo-link"
+        >
+          Happy Brain
         </Link>
-        <nav className="" role="navigation" data-test="mobile-nav">
-          <Link href="/" className="" data-test="home-mobile-nav-link">
+        <nav
+          className="mt-8 flex flex-col items-center gap-5"
+          role="navigation"
+          data-test="mobile-nav"
+        >
+          <Link href="/" className="text-3xl" data-test="home-mobile-nav-link">
             Home
           </Link>
           <Link
             href="/selectors"
-            className=""
+            className="text-3xl"
             data-test="selectors-mobile-nav-link"
           >
             Selectors
           </Link>
           <Link
             href="/account"
-            className=""
+            className="text-3xl"
             data-test="account-mobile-nav-link"
           >
             Account

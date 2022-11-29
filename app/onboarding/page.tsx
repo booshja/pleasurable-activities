@@ -56,7 +56,7 @@ const Onboarding = (): JSX.Element => {
       categories: categoriesData,
       activities: activitiesData,
     };
-    console.log("SENDING...", JSON.stringify(onboardingData));
+    console.log("SENDING...", onboardingData);
     // todo: send onboarding data to back end here
     nextPage();
   };

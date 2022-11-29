@@ -1,4 +1,4 @@
-# **pleasurable-activities** (--url--)
+# **happy-brain** (--url--)
 
 An app to help you pick a pleasurable activity to do!
 
