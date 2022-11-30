@@ -52,7 +52,7 @@ const Navbar = (): JSX.Element => {
         onClick={() => setOpen((curr) => !curr)}
         data-test="mobile-menu-button"
       >
-        🍔
+        🧠
       </button>
       <div
         className={`${
@@ -81,7 +81,11 @@ const Navbar = (): JSX.Element => {
           role="navigation"
           data-test="mobile-nav"
         >
-          <Link href="/" className="text-3xl" data-test="home-mobile-nav-link">
+          <Link
+            href="/home"
+            className="text-3xl"
+            data-test="home-mobile-nav-link"
+          >
             Home
           </Link>
           <Link
