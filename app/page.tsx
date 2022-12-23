@@ -1,7 +1,7 @@
 require("server-only");
 
 // components
-import NavbarLoggedOut from "@shared/components/NavbarLoggedOut";
+import NavbarLoggedOut from "@shared/components/nav/NavbarLoggedOut";
 
 export default function Landing(): JSX.Element {
   return (

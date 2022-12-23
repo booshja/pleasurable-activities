@@ -1,0 +1,88 @@
+{
+  "categories": [
+    {
+      "_id": "cat1",
+      "name": "Hockey",
+      "activities": [
+        {
+          "_id": "abcd1234",
+          "activity": "Watch highlights",
+          "time": "A couple minutes"
+        },
+        {
+          "_id": "bcde2345",
+          "activity": "Stick handling exercises",
+          "time": "A half hour"
+        },
+        {
+          "_id": "cdef3456",
+          "activity": "Watch a game",
+          "time": "A couple hours"
+        }
+      ]
+    },
+    {
+      "_id": "cat2",
+      "name": "Family",
+      "activities": [
+        {
+          "_id": "defg4567",
+          "activity": "Give hugs",
+          "time": "A couple minutes"
+        },
+        {
+          "_id": "efgh5678",
+          "activity": "Family drawing time",
+          "time": "A half hour"
+        },
+        {
+          "_id": "fghi6789",
+          "activity": "Take a walk together",
+          "time": "An hour"
+        }
+      ]
+    },
+    {
+      "_id": "cat3",
+      "name": "Dogs",
+      "activities": [
+        {
+          "_id": "ghij7890",
+          "activity": "Cuddle",
+          "time": "5-10 minutes"
+        },
+        {
+          "_id": "hijk8901",
+          "activity": "Training",
+          "time": "10-15 minutes"
+        },
+        {
+          "_id": "ijkl9012",
+          "activity": "Go for a longer walk",
+          "time": "A half hour"
+        }
+      ]
+    },
+    {
+      "_id": "cat4",
+      "name": "Hobbies",
+      "activities": [
+        {
+          "_id": "jklm0123",
+          "activity": "Reach out to friends",
+          "time": "A couple minutes"
+        },
+        {
+          "_id": "klmn1123",
+          "activity": "Read a book",
+          "time": "5-10 minutes"
+        },
+        {
+          "_id": "lmno1111",
+          "activity": "Side project coding",
+          "time": "An hour"
+        }
+      ]
+    }
+  ]
+}

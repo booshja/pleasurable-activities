@@ -14,7 +14,13 @@ interface SavedActivity extends Activity {
   time: string;
 }
 
-interface SavedCategory extends Category {
+interface SavedCategory {
+  _id: string;
+  name: string;
+  activities: string[];
+}
+
+interface SavedPopulatedCategory extends Category {
   _id: string;
   name: string;
   activities: SavedActivity[];
@@ -43,6 +49,7 @@ export type {
   Category,
   SavedActivity,
   SavedCategory,
+  SavedPopulatedCategory,
   UserData,
   ActivitiesData,
   CategoriesData,

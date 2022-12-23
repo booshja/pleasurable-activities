@@ -15,10 +15,6 @@ const Navbar = (): JSX.Element => {
     setOpen(false);
   }, [pathname]);
 
-  const handleMenuOpen = (): void => {
-    setOpen(true);
-  };
-
   return (
     <header
       className="container flex items-center justify-between h-16 max-w-full px-5 border-b-2 lg:px-8"
@@ -32,13 +28,25 @@ const Navbar = (): JSX.Element => {
         role="navigation"
         data-test="desktop-nav"
       >
-        <Link href="/" className="" data-test="home-nav-link">
+        <Link
+          href="/home"
+          className={pathname === "/home" ? "font-bold" : ""}
+          data-test="home-nav-link"
+        >
           Home
         </Link>
-        <Link href="/selectors" className="" data-test="selectors-nav-link">
+        <Link
+          href="/selector"
+          className={pathname === "/selector" ? "font-bold" : ""}
+          data-test="selectors-nav-link"
+        >
           Selectors
         </Link>
-        <Link href="/account" className="" data-test="account-nav-link">
+        <Link
+          href="/account"
+          className={pathname === "/account" ? "font-bold" : ""}
+          data-test="account-nav-link"
+        >
           Account
         </Link>
         <p className="">Log Out</p>
@@ -83,21 +91,23 @@ const Navbar = (): JSX.Element => {
         >
           <Link
             href="/home"
-            className="text-3xl"
+            className={`text-3xl ${pathname === "/home" ? "font-bold" : ""}`}
             data-test="home-mobile-nav-link"
           >
             Home
           </Link>
           <Link
-            href="/selectors"
-            className="text-3xl"
+            href="/selector"
+            className={`text-3xl ${
+              pathname === "/selector" ? "font-bold" : ""
+            }`}
             data-test="selectors-mobile-nav-link"
           >
             Selectors
           </Link>
           <Link
             href="/account"
-            className="text-3xl"
+            className={`text-3xl ${pathname === "/account" ? "font-bold" : ""}`}
             data-test="account-mobile-nav-link"
           >
             Account
